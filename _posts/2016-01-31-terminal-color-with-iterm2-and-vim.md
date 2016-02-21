@@ -32,14 +32,23 @@ Then I follow the vim plugin's install guide in line with vim-plug and set the c
 I take a look at the issues and the maintainer points folks at a colortest in the base16-shel repo. Even though it looked scary, I cloned it and checked it out. The colortest show an output of 21 colors, 16 were the ones I was seeing in iterm's pregerences. The last 5 colors stick out like a sore thumb. They aren't `bespin`. I see a gaudy black and blue gradient.
 
 
-{% highlight vimscript %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## Moral of the story
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Running the bash scripts in the Base16-Shell repo will change the color profile of iTerm2. Use this instead of the Preferences dropdown. This is only temporary though. To persist the color settings on new terminal windows, you need to call the Base16 script from within your `.bashrc` or `.zshrc` and then specify the colorscheme like so:
+
+``` vimscript
+export CLICOLOR=1
+BASE16_SHELL="$HOME/code/base16-shell/base16-bespin.dark.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+```
+
+Then set the corresponding colorscheme in your `.vimrc` to match using your theme manager (e.g. [thematic][]) or with vanilla vimscript like so:
+
+```
+set background=dark
+colorscheme base16-bespin
+```
+
 
 [base16-github]: https://github.com/chriskempson/base16
+[thematic]: http://github.com/reedes/vim-thematic
