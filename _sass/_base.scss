@@ -9,7 +9,15 @@ dl, dd, ol, ul, figure {
 }
 
 html {
-    font-size: $base-font-size;
+    font-size: $root-font-size;
+
+    @include media-query($on-palm) {
+        font-size: $root-font-size * 0.85;
+    }
+
+    // @include media-query($large) {
+    //     font-size: $root-font-size * 1.2;
+    // }
 }
 
 
@@ -17,9 +25,10 @@ html {
  * Basic styling
  */
 body {
+    min-width: 400px;
+    background-color: $base;
+    color: $text;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -37,7 +46,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -86,24 +95,65 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+    padding-top: $spacing-unit / 2;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+h2, h3, h4, h5, h6 {
+    color: $text-dark;
+}
+h2 {
+    font-size: 2.29rem;
+}
+h3 {
+    font-size: 1.71rem;
+}
+h4 {
+    font-size: 1.3333rem;
+}
+h5 {
+    font-size: 1.14rem;
+}
+h6 {
+    font-size: 1rem;
 }
 
+
+/**
+ * Emphasis
+ */
+strong {
+    font-weight: 600;
+}
+i {
+    font-style: italic;
+}
 
 
 /**
  * Links
  */
 a {
-    color: $brand-color;
+    padding-bottom: 2px;
+    color: $text-dark;
+    border-bottom: 1px solid $text-dark;
     text-decoration: none;
+    transition: color ease $time, border-color ease $time;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $text-dark;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $accent;
+        border-color: $accent;
+    }
+
+    &:focus {
+        outline: none;
     }
 }
 
@@ -113,42 +163,69 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    position: relative;
+    color: $text-dark;
+    padding: $spacing-unit;
+    font-size: $small-font-size;
     font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
     }
+
+    span {
+        position: absolute;
+        right: 100px;
+        text-align: right;
+    }
+
+    &:before, &:after {
+        position: absolute;
+        font-size: 3rem;
+        line-height: 10px;
+    }
+    &:before {
+        content: "“";
+    }
+    &:after {
+        content: "”";
+        bottom: -4px;
+        right: $spacing-unit;
+    }
 }
 
+
+/**
+ * Horizontal Rules
+ */
+hr {
+    border: 0;
+    height: 1px;
+    background: $text-dark;
+    margin: ($spacing-unit * 1.5) 0;
+}
 
 
 /**
  * Code formatting
  */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+pre, code {
+    font-size: $small-font-size;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 3px 5px;
+    background-color: $base-dark;
 }
 
 pre {
-    padding: 8px 12px;
+    padding: $spacing-unit;
+    background-color: $base-dark;
     overflow-x: auto;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+    code {
+        padding: 0px;
+        background-color: none;
     }
 }
 
@@ -202,7 +279,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $text-dark;
         }
     }
 }

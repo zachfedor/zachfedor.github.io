@@ -2,11 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 10px solid $grey-color;
+    border-top: 0.5rem solid $text-dark;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
 }
 
 .site-title {
@@ -14,11 +11,6 @@
     line-height: 56px;
     margin-bottom: 0;
     float: left;
-
-    &,
-    &:visited {
-        color: $grey-color;
-    }
 }
 
 .site-nav {
@@ -30,62 +22,17 @@
     }
 
     .page-link {
-        color: $grey-color;
+        color: $text-dark;
         line-height: $base-line-height;
         text-transform: lowercase;
+
+        &:hover {
+            color: $accent;
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
         }
     }
 }
@@ -96,12 +43,12 @@
  * Site footer
  */
 .site-footer {
-    background: $grey-color-dark;
+    background: $base-dark;
     padding: $spacing-unit 0;
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: $small-font-size;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -112,8 +59,7 @@
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
+    color: $text-dark;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -166,11 +112,10 @@
  * Page content
  */
 .page-content {
-    padding: ($spacing-unit + 20px) 0;
+    padding: ($spacing-unit + 1rem) 0;
 }
 
 .page-heading {
-    font-size: 20px;
 }
 
 .post-list {
@@ -184,7 +129,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $text-dark;
     text-transform: lowercase;
 
     time {
@@ -202,12 +147,12 @@
             right: 0;
             bottom: 0;
             width: 100%;
-            border-top: 1px solid $grey-color;
+            border-top: 1px solid $text-dark;
             z-index: -1;
         }
 
         span {
-            background: $background-color;
+            background: $base;
             padding: 2px 15px;
         }
     }
@@ -215,7 +160,7 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 1.3333rem;
 }
 
 
@@ -228,40 +173,41 @@
 }
 
 .post-title {
-    font-size: 64px;
-    line-height: 1.1;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+    margin-bottom: $spacing-unit;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        // font-size: 36px;
     }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
 
-    h2 {
-        font-size: 32px;
+    // h2 {
+    //     font-size: 32px;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
+    //     @include media-query($on-laptop) {
+    //         font-size: 28px;
+    //     }
+    // }
 
-    h3 {
-        font-size: 26px;
+    // h3 {
+    //     font-size: 26px;
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
+    //     @include media-query($on-laptop) {
+    //         font-size: 22px;
+    //     }
+    // }
 
-    h4 {
-        font-size: 20px;
+    // h4 {
+    //     font-size: 20px;
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+    //     @include media-query($on-laptop) {
+    //         font-size: 18px;
+    //     }
+    // }
+
+    p {
+        text-align: justify;
     }
 }

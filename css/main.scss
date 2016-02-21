@@ -4,30 +4,32 @@
 @charset "utf-8";
 
 
+// Colors
+$accent:    #ebf5ff;
+$base-dark: #20272E;
+$base:      #2A323B;
+$text-dark: #6D7D8C;
+$text:      #abbccc;
 
-// Our variables
+
+// Typography
 $base-font-family: Georgia, serif;
-$base-font-size:   21px;
+$root-font-size:   21px;
+$base-font-size:   1rem;
 $base-font-weight: 300;
 $small-font-size:  0.9rem;
 $base-line-height: 1.7;
 
-$spacing-unit:     30px;
 
-$text-color:       #DFE5F2;
-$background-color: #2D353B;
-$brand-color:      #778899;
-
-$grey-color:       #778899;
-$grey-color-light: #EBF0F5;
-$grey-color-dark:  #23282B;
-
-// Width of the content area
+// Dimensions
+$spacing-unit:     2rem;
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+$large:            1200px;
 
+$time: 0.3s;
 
 
 // Use media queries like this:
