@@ -61,14 +61,36 @@ Aliquam erat volutpat. Fusce ac facilisis `nisl`, sed sodales ante. Etiam `leo l
 
 Here is a code block:
 
-    <div>
-        <p>a small code example</p>
+{% highlight ruby %}
+require "gem"
 
-        <ul>
-            <li>with html</li>
-            <li>and fancy indents</li>
-        </ul>
-    </div>
+string = "base16"
+symbol = :base16
+fixnum = 0
+float  = 0.00
+array  = Array.new
+array  = ['chris', 85]
+hash   = {"test" => "test"}
+regexp = /[abc]/
+
+# This is a comment
+class Person
+
+    attr_accessor :name
+
+    def initialize(attributes = {})
+        @name = attributes[:name]
+    end
+
+    def self.greet
+        "hello"
+    end
+end
+
+person1 = Person.new(:name => "Chris")
+print Person::greet, " ", person1.name, "\n"
+puts "another #{Person::greet} #{person1.name}"
+{% endhighlight %}
 
 
 Aliquam erat volutpat. Fusce ac facilisis `nisl`, sed sodales ante. Etiam `leo lorem`, vehicula vitae nunc vitae, posuere varius odio. Morbi congue nisi ac bibendum condimentum. Praesent sagittis tellus ut dui molestie, sodales varius sapien pellentesque. Nullam sed finibus arcu. Mauris nec enim ac arcu suscipit tincidunt. Donec tristique ex a tellus ornare scelerisque. Aliquam eu enim iaculis, mollis sapien ut, ultricies enim. Aliquam condimentum ipsum mi, molestie efficitur dolor consectetur ac. Suspendisse neque magna, bibendum sit amet aliquet at, fermentum et nibh. Suspendisse eu urna mollis, volutpat risus vel, pharetra eros. Vivamus rhoncus elit et pulvinar consequat. Phasellus ornare velit eget quam scelerisque, at tincidunt est varius. Maecenas eu hendrerit arcu.
