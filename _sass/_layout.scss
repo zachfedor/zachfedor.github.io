@@ -107,6 +107,32 @@
 }
 
 
+/**
+ * Index
+ */
+article.post-tile {
+    padding: $spacing-unit / 2;
+    transition: background-color ease $time;
+
+    h2 {
+        padding: 0;
+        margin-bottom: 0.4rem;
+
+        a.post-link {
+            text-underline: none;
+        }
+    }
+
+    p.post-meta {
+        margin: 0;
+        text-align: right;
+    }
+
+    // &:hover {
+    //     background-color: $base-dark;
+    // }
+}
+
 
 /**
  * Page content
