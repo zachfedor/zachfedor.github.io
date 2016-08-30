@@ -1,0 +1,143 @@
+{
+    "project_logo": null,
+    "project_favicon": "favicon.png",
+    "project_name": "Astrum Demo",
+    "project_url": "http://zachfedor.me",
+    "copyright_start_year": 2015,
+    "client_name": null,
+    "client_url": null,
+    "creators": [
+        {
+            "name": "Zach Fedor",
+            "url": "http://twitter.com/zachfedor"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#2A323B",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null
+    },
+    "assets": {
+        "css": [
+            "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css",
+            "../css/main.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": "https://fonts.googleapis.com/css?family=Source+Serif+Pro:600|Source+Sans+Pro:400,400italic,600|Source+Code+Pro:300"
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "typography",
+            "title": "Typography",
+            "components": [
+                {
+                    "group": "typography",
+                    "name": "headings",
+                    "title": "Headings",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "typography",
+                    "name": "body",
+                    "title": "Body",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "content",
+            "title": "Content",
+            "components": [
+                {
+                    "group": "content",
+                    "name": "lists",
+                    "title": "Lists",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "content",
+                    "name": "blockquote",
+                    "title": "Blockquote",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "content",
+                    "name": "code-block",
+                    "title": "Code Block",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "content",
+                    "name": "inline-code",
+                    "title": "Inline Code",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "content",
+                    "name": "horizontal-rule",
+                    "title": "Horizontal Rule",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "navigation",
+            "title": "Navigation",
+            "components": [
+                {
+                    "group": "navigation",
+                    "name": "header",
+                    "title": "Header",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "navigation",
+                    "name": "footer",
+                    "title": "Footer",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        }
+    ],
+    "version": "1.5.16"
+}
