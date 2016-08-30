@@ -189,8 +189,8 @@ blockquote {
     }
     &:after {
         content: "”";
-        bottom: -4px;
-        right: $spacing-unit;
+        bottom: 10px;
+        right: $spacing-unit + 0.5rem;
     }
 }
 

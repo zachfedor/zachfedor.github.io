@@ -45,16 +45,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut commodo turp
 
 Block Quote:
 
-> Donec eleifend in eros vel posuere. Suspendisse ullamcorper dui sit amet
-> ligula pellentesque dignissim ac vel mi. Suspendisse libero dui, pretium
-> quis dui consequat, molestie vestibulum felis.
->
-> Donec eleifend in eros vel posuere. Suspendisse ullamcorper dui sit amet
-> ligula pellentesque dignissim ac vel mi. Suspendisse libero dui, pretium
-> quis dui consequat, molestie vestibulum felis.
+> Donec eleifend in eros vel posuere. Suspendisse ullamcorper dui sit amet ligula pellentesque dignissim ac vel mi. Suspendisse libero dui, pretium quis dui consequat, molestie vestibulum felis.
+> Donec eleifend in eros vel posuere. Suspendisse ullamcorper dui sit amet ligula pellentesque dignissim ac vel mi. Suspendisse libero dui, pretium quis dui consequat, molestie vestibulum felis.
 >
 > <span>-- <cite>Cicero</cite></span>
-
 
 Aliquam erat volutpat. Fusce ac facilisis `nisl`, sed sodales ante. Etiam `leo lorem`, vehicula vitae nunc vitae, posuere varius odio. Morbi congue nisi ac bibendum condimentum. Praesent sagittis tellus ut dui molestie, sodales varius sapien pellentesque. Nullam sed finibus arcu. Mauris nec enim ac arcu suscipit tincidunt. Donec tristique ex a tellus ornare scelerisque. Aliquam eu enim iaculis, mollis sapien ut, ultricies enim. Aliquam condimentum ipsum mi, molestie efficitur dolor consectetur ac. Suspendisse neque magna, bibendum sit amet aliquet at, fermentum et nibh. Suspendisse eu urna mollis, volutpat risus vel, pharetra eros. Vivamus rhoncus elit et pulvinar consequat. Phasellus ornare velit eget quam scelerisque, at tincidunt est varius. Maecenas eu hendrerit arcu.
 
