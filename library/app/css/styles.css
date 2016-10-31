@@ -188,7 +188,6 @@
 .ndpl-nsc[href]:visited {
     color: #303637 !important;
     text-decoration: none;
-    border: none;
 }
 
 .ndpl-cf:after {
@@ -562,6 +561,9 @@
     margin: 0 0 21px;
     padding: 0 24px;
     text-transform: uppercase;
+    .ndpl-nsc {
+        border-bottom: none;
+    }
 }
 
 /**

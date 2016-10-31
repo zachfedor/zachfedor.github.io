@@ -17,6 +17,13 @@ Here you will find seldom updates and neglected thoughts. Mind the cobwebs and e
 
 [[about]]
 
+
+### Drafts
+
+[[_drafts/2016-09-12-on-dying]]
+[[_drafts/2016-10-28-project-priorities]]
+
+
 ### Posts
 
 [[_posts/2016-07-09-on-perfection]]

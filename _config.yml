@@ -18,4 +18,8 @@ twitter_username: zachfedor
 github_username:  zachfedor
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+
+# Markdown Options
+redcarpet:
+    extensions: ["autolink", "fenced_code_blocks", "footnotes", "no_intra_emphasis", "smart", "space_after_headers", "strikethrough", "superscript", "tables"]
