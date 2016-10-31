@@ -84,6 +84,14 @@
                 },
                 {
                     "group": "content",
+                    "name": "tables",
+                    "title": "Tables",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "content",
                     "name": "blockquote",
                     "title": "Blockquote",
                     "options": {

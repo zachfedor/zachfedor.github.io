@@ -52,6 +52,79 @@ ul, ol, dl, figure,
 
 
 /**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+    padding-top: $spacing-unit / 2;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+h2, h3, h4, h5, h6 {
+    color: $text-dark;
+}
+h2 {
+    font-size: 2.29rem;
+}
+h3 {
+    font-size: 1.71rem;
+}
+h4 {
+    font-size: 1.3333rem;
+}
+h5 {
+    font-size: 1.14rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+
+
+/**
+ * Body Text
+ */
+strong {
+    font-weight: 600;
+}
+i {
+    font-style: italic;
+}
+sup {
+    font-size: 0.6rem;
+}
+
+
+/**
+ * Links
+ */
+a {
+    padding-bottom: 2px;
+    color: $text-dark;
+    border-bottom: 1px solid $text-dark;
+    text-decoration: none;
+    transition: color ease $time, border-color ease $time;
+
+    &:visited {
+        color: $text-dark;
+    }
+
+    &:hover {
+        color: $accent;
+        border-color: $accent;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+/**
  * Images
  */
 img {
@@ -85,75 +158,6 @@ li {
     > ul,
     > ol {
          margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-    padding-top: $spacing-unit / 2;
-}
-h1 {
-    font-size: 3rem;
-    line-height: 1.1;
-    letter-spacing: 2px;
-}
-h2, h3, h4, h5, h6 {
-    color: $text-dark;
-}
-h2 {
-    font-size: 2.29rem;
-}
-h3 {
-    font-size: 1.71rem;
-}
-h4 {
-    font-size: 1.3333rem;
-}
-h5 {
-    font-size: 1.14rem;
-}
-h6 {
-    font-size: 1rem;
-}
-
-
-/**
- * Emphasis
- */
-strong {
-    font-weight: 600;
-}
-i {
-    font-style: italic;
-}
-
-
-/**
- * Links
- */
-a {
-    padding-bottom: 2px;
-    color: $text-dark;
-    border-bottom: 1px solid $text-dark;
-    text-decoration: none;
-    transition: color ease $time, border-color ease $time;
-
-    &:visited {
-        color: $text-dark;
-    }
-
-    &:hover {
-        color: $accent;
-        border-color: $accent;
-    }
-
-    &:focus {
-        outline: none;
     }
 }
 
@@ -195,6 +199,7 @@ blockquote {
 }
 
 
+
 /**
  * Horizontal Rules
  */
@@ -204,6 +209,7 @@ hr {
     background: $text-dark;
     margin: ($spacing-unit * 1.5) 0;
 }
+
 
 
 /**
@@ -226,6 +232,59 @@ pre {
     code {
         padding: 0px;
         background-color: none;
+    }
+}
+
+
+
+/**
+ * Tables
+ */
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    border-collapse: collapse;
+    text-align: left;
+
+    td {
+        border-top: 1px solid $text-dark;
+    }
+
+    th {
+        border-bottom: 3px solid $text-dark;
+    }
+
+    td, th {
+        vertical-align: bottom;
+        padding: ($spacing-unit / 4) ($spacing-unit / 2);
+    }
+}
+
+div.table-responsive {
+    display: block;
+    width: 100%;
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $text-dark;
+        }
     }
 }
 
@@ -265,21 +324,3 @@ pre {
     }
 }
 
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $text-dark;
-        }
-    }
-}
