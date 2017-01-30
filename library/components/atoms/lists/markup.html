@@ -1,0 +1,54 @@
+<!-- markdown
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - nested
+        - nested twice
+        - nested twice
+    - nested
+- Aliquam vestibulum libero eu fermentum ultrices.
+- Quisque eu elit euismod ligula rutrum fermentum.
+- Pellentesque tempor dolor ac rhoncus tincidunt.
+
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    1. nested
+        1. nested twice
+        2. nested twice
+    2. nested
+2. Aliquam vestibulum libero eu fermentum ultrices.
+3. Quisque eu elit euismod ligula rutrum fermentum.
+4. Pellentesque tempor dolor ac rhoncus tincidunt.
+
+compiles to: -->
+<ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <ul>
+            <li>nested
+                <ul>
+                    <li>nested twice</li>
+                    <li>nested twice</li>
+                </ul>
+            </li>
+            <li>nested</li>
+        </ul>
+    </li>
+    <li>Aliquam vestibulum libero eu fermentum ultrices.</li>
+    <li>Quisque eu elit euismod ligula rutrum fermentum.</li>
+    <li>Pellentesque tempor dolor ac rhoncus tincidunt.</li>
+</ul>
+
+<ol>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <ol>
+            <li>nested
+                <ol>
+                    <li>nested twice</li>
+                    <li>nested twice</li>
+                </ol>
+            </li>
+            <li>nested</li>
+        </ol>
+    </li>
+    <li>Aliquam vestibulum libero eu fermentum ultrices.</li>
+    <li>Quisque eu elit euismod ligula rutrum fermentum.</li>
+    <li>Pellentesque tempor dolor ac rhoncus tincidunt.</li>
+</ol>

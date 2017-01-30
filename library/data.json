@@ -1,7 +1,7 @@
 {
     "project_logo": null,
     "project_favicon": "favicon.png",
-    "project_name": "Astrum Demo",
+    "project_name": "ZachFedor.me",
     "project_url": "http://zachfedor.me",
     "copyright_start_year": 2015,
     "client_name": null,
@@ -22,7 +22,12 @@
         "sample_dark_background": "#2A323B",
         "show_project_name": true,
         "show_version": true,
-        "max_width": null
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
     },
     "assets": {
         "css": [
@@ -43,39 +48,41 @@
             {
                 "name": "introduction",
                 "title": "Introduction",
-                "file": "./pages/intro.md"
+                "file": "./pages/introduction.md"
             }
         ]
     },
     "groups": [
         {
-            "name": "typography",
-            "title": "Typography",
+            "name": "atoms",
+            "title": "Atoms",
             "components": [
                 {
-                    "group": "typography",
+                    "name": "text",
+                    "title": "Text",
+                    "options": {
+                        "sample_dark_background": true
+                    },
+                    "group": "atoms"
+                },
+                {
                     "name": "headings",
                     "title": "Headings",
+                    "options": {
+                        "sample_dark_background": true
+                    },
+                    "group": "atoms"
+                },
+                {
+                    "group": "atoms",
+                    "name": "links",
+                    "title": "Links",
                     "options": {
                         "sample_dark_background": true
                     }
                 },
                 {
-                    "group": "typography",
-                    "name": "body",
-                    "title": "Body",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "content",
-            "title": "Content",
-            "components": [
-                {
-                    "group": "content",
+                    "group": "atoms",
                     "name": "lists",
                     "title": "Lists",
                     "options": {
@@ -83,7 +90,7 @@
                     }
                 },
                 {
-                    "group": "content",
+                    "group": "atoms",
                     "name": "tables",
                     "title": "Tables",
                     "options": {
@@ -91,31 +98,23 @@
                     }
                 },
                 {
-                    "group": "content",
-                    "name": "blockquote",
-                    "title": "Blockquote",
+                    "name": "blockquotes",
+                    "title": "Blockquotes",
                     "options": {
                         "sample_dark_background": true
-                    }
+                    },
+                    "group": "atoms"
                 },
                 {
-                    "group": "content",
-                    "name": "code-block",
-                    "title": "Code Block",
+                    "name": "code",
+                    "title": "Code",
                     "options": {
                         "sample_dark_background": true
-                    }
+                    },
+                    "group": "atoms"
                 },
                 {
-                    "group": "content",
-                    "name": "inline-code",
-                    "title": "Inline Code",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                },
-                {
-                    "group": "content",
+                    "group": "atoms",
                     "name": "horizontal-rule",
                     "title": "Horizontal Rule",
                     "options": {
@@ -125,21 +124,35 @@
             ]
         },
         {
-            "name": "navigation",
-            "title": "Navigation",
+            "name": "molecules",
+            "title": "Molecules",
             "components": [
                 {
-                    "group": "navigation",
-                    "name": "header",
-                    "title": "Header",
+                    "name": "post-header",
+                    "title": "Post Header",
+                    "options": {
+                        "sample_dark_background": true
+                    },
+                    "group": "molecules"
+                },
+                {
+                    "group": "molecules",
+                    "name": "citations",
+                    "title": "Citations",
                     "options": {
                         "sample_dark_background": true
                     }
-                },
+                }
+            ]
+        },
+        {
+            "name": "organisms",
+            "title": "Organisms",
+            "components": [
                 {
-                    "group": "navigation",
-                    "name": "footer",
-                    "title": "Footer",
+                    "group": "organisms",
+                    "name": "post-index",
+                    "title": "Post Index",
                     "options": {
                         "sample_dark_background": true
                     }
@@ -147,5 +160,5 @@
             ]
         }
     ],
-    "version": "1.5.16"
+    "version": "1.9.3"
 }

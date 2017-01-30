@@ -1,0 +1,22 @@
+<!-- markdown
+
+Lorem ipsum dolor sit amet, consectetur [inline link][google].
+
+Lorem ipsum dolor sit amet, consectitur adipiscing elit.[^1]
+
+<a class="page-link" href="#">Block Link</a>
+
+[google]: http://google.com "Link Title"
+[^1]: # "Footnote"
+
+
+compiles to: -->
+<p>
+    Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing elit</a>
+</p>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<sup><a href="#fn1">1</a></sup>
+</p>
+
+<a class="page-link" href="#">Block Link</a>
