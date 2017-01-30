@@ -6,7 +6,9 @@ author: zachfedor
 categories: musings
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.[^1] Integer ut commodo turpis, dapibus lobortis purus. Nulla vestibulum urna vitae sapien rutrum tristique. [Donec eleifend in eros](www.loremipsum.com "Lorem Ipsum Generator") vel posuere. Suspendisse ullamcorper dui sit amet ligula pellentesque dignissim ac vel mi. "Suspendisse libero dui, pretium quis dui consequat, molestie vestibulum felis." Nulla faucibus, nisl 'quis cursus' congue, arcu mi convallis lorem, in porttitor magna sapien vel dolor. Sed purus dolor www.google.com, porttitor ac fringilla varius, vestibulum vel augue. Sed feugiat sapien non aliquet [dictum][1].
+*This post only exists to demonstrate the living documentation that Astrum provides as a pattern library. [Check it out.](/library)*
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.[^1] Integer ut commodo turpis, dapibus lobortis purus. Nulla vestibulum urna vitae sapien rutrum tristique. [Donec eleifend in eros][1] vel posuere. Suspendisse ullamcorper dui sit amet ligula pellentesque dignissim ac vel mi. "Suspendisse libero dui, pretium quis dui consequat, molestie vestibulum felis." Nulla faucibus, nisl 'quis cursus' congue, arcu mi convallis lorem, in porttitor magna sapien vel dolor. Sed purus dolor www.google.com, porttitor ac fringilla varius, vestibulum vel augue. Sed feugiat sapien non aliquet [dictum][1].
 
 
 [^1]: This is a footnote.

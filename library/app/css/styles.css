@@ -158,7 +158,7 @@
 .ndpl-c-brand-ca a[href]:active,
 .ndpl-c-brand-ca a:active,
 .ndpl-c-brand-ca a[href]:visited,
-.ndpl-c-brand-ca a:visited        { color: #303637; border: none;}            /* Brand child anchors */
+.ndpl-c-brand-ca a:visited        { color: #303637; }            /* Brand child anchors */
 .ndpl-c-brand-ca a[href]:hover,
 .ndpl-c-brand-ca a:hover          { color: #FEA1AC; }            /* Brand child anchors on hover */
 .ndpl-c-brand-cai a,
@@ -466,9 +466,11 @@
     position: fixed;
     right: 0;
     top: 0;
-    transition: left .5s ease;
     width: 100%;
     z-index: 9997;
+}
+.ndpl-mobile .ndpl-sidebar {
+    transition: left .5s ease;
 }
 .ndpl-sidebar.open {
     left: 0;
@@ -561,9 +563,6 @@
     margin: 0 0 21px;
     padding: 0 24px;
     text-transform: uppercase;
-    .ndpl-nsc {
-        border-bottom: none;
-    }
 }
 
 /**
@@ -657,7 +656,6 @@
  * ----------------------------------------//
  */
 .ndpl-nav__component {
-    border-bottom: none;
     border-left: 6px solid transparent;
     color: #616367 !important;
     display: block;
@@ -770,6 +768,13 @@
     left: -9999px;
     position: absolute;
     top: -9999px;
+}
+
+@media only screen and (min-width: 35em) {
+    .ndpl-page {
+        max-width: 580px;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 60em) {
@@ -1020,19 +1025,29 @@
 }
 .ndpl-component__code .ndpl-pre {
     margin: 0;
-    padding: 0;
-    background-color: transparent;
 }
+
+/* We apply the same code styling to page, description and component elements. */
+.ndpl-page pre code,
+.ndpl-component__description pre code,
 .ndpl-component__code .ndpl-code {
+    box-sizing: border-box;
+    color: #616367;
     font-size: 12px;
     line-height: 18px;
     opacity: 0.75;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     padding: 36px 12px;
     white-space: pre;
+    width: 100%;
 }
+.ndpl-page pre code,
+.ndpl-component__description pre code {
+    padding: 12px;
+}
+
 .ndpl-component__code-toggle {
     border-bottom: 1px solid transparent;
     color: #B0B1B3;
@@ -1052,6 +1067,9 @@
         border-radius: 6px 6px 0 0;
         padding: 36px;
     }
+    .ndpl-component__sample--disabled-code {
+        border-radius: 6px;
+    }
     .ndpl-component__sample-missing,
     .ndpl-component__sample-hidden {
         margin: 0;
@@ -1060,10 +1078,16 @@
         border: 1px solid #E0E6ED;
         border-top: none;
     }
+    .ndpl-page pre code,
+    .ndpl-component__description pre code,
     .ndpl-component__code .ndpl-code {
         font-size: 15px;
         line-height: 21px;
         padding: 36px;
+    }
+    .ndpl-page pre code,
+    .ndpl-component__description pre code {
+        padding: 12px;
     }
     .ndpl-component__code-toggle {
         border-left: 1px solid transparent;
