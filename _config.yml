@@ -17,9 +17,3 @@ url: "http://zachfedor.github.io" # the base hostname & protocol for your site
 twitter_username: zachfedor
 github_username:  zachfedor
 
-# Build settings
-markdown: redcarpet
-
-# Markdown Options
-redcarpet:
-    extensions: ["autolink", "fenced_code_blocks", "footnotes", "no_intra_emphasis", "smart", "space_after_headers", "strikethrough", "superscript", "tables"]

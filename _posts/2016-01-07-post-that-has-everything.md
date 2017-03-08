@@ -72,7 +72,7 @@ Suspendisse libero dui, pretium quis dui consequat, molestie vestibulum felis. N
 
 Here is a code block:
 
-```ruby
+{% highlight ruby %}
 require "gem"
 
 string = "base16"
@@ -101,7 +101,7 @@ end
 person1 = Person.new(:name => "Chris")
 print Person::greet, " ", person1.name, "\n"
 puts "another #{Person::greet} #{person1.name}"
-```
+{% endhighlight %}
 
 Praesent sagittis tellus ut dui molestie, sodales varius sapien pellentesque. Nullam sed finibus arcu. Mauris nec enim ac arcu suscipit tincidunt. Donec tristique ex a tellus ornare scelerisque. Aliquam eu enim iaculis, mollis sapien ut, ultricies enim.
 

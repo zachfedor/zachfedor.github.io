@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project Priorities
+title:  "Project Priorities"
 date:   2016-01-07 07:40:30 -0500
 author: zachfedor
 categories: dev
