@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Setting Up Apache On El Capitan for a Dev Environment"
-date:   2016-06-13 09:48:35
-categories: dev
+title: "Setting Up Apache On El Capitan for a Dev Environment"
+date: 2016-06-13
+category: dev
 ---
 
 Open `/etc/apache2/httpd.conf` and uncomment the two lines pertaining to virtual hosts:

@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Work Till Your Idols Become Your Rivals"
-date:   2016-03-13 09:47:00 -0500
-categories: philosophy
+title: "Work Till Your Idols Become Your Rivals"
+date: 2016-03-13
+categories: musings
 ---
+
 This quote is a nice bit of advice to the ambitious. It connects the fact that you idolize someone because you think they are successful and therefore sublimes a specific goal out of an often enigmatic idea success. The path to that goal is yours to discover, but the end is clear: to be on the same playing field as those you admire. But this contains a major assumption that your idols are your idols because of the work they do or how they do it. So what if you idolize someone for all the work they do not do?
 
 Anytime I read a piece of literature from the 18th or 19th centuries, I'm often struck by the seemingly endless supply of liesure time afforded to the characters. Often, these are men of capital. Whether inherited or worked for, the stories almost always take place after the hard part is over. These men wake early, write copious letters, meet with associates over cognac and cigars, and travel by boat or train to far off parts of the world to conduct their business. Yes this is work, but from the reader's point of view it is enviable.

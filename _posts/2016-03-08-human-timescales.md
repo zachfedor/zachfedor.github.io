@@ -1,9 +1,9 @@
 ---
-layout: post
 title: "The Most Human of Timescales"
-date:   2016-03-08 22:04:00 -0500
-categories: philosophy
+date: 2016-03-08
+category: musings
 ---
+
 What is the most human of timescales? We measure our age in years, but is this the best choice to define our life?
 
 > I hadn't understood how days could be both long and short at the same time: long to live through, maybe, but so drawn out that theyflow into one another. They lost their names. Only the words "yesterday" and "tomorrow" still had any meaning for me.

@@ -1,9 +1,7 @@
 ---
-layout: post
-title:  "Switching to rbenv"
-date:   2017-03-06 13:55:43 -0500
-author: zachfedor
-categories: dev
+title: "Switching to rbenv"
+date: 2017-03-06
+category: dev
 ---
 
 My company just switched from `rvm` to `rbenv` and I had some issues in transit. I figured I'd add my setup here just in case, and I might as well do some research while I was at it.

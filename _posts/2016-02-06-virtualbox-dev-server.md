@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Using an Arch VirtualBox as a Local Dev Server"
-date:   2016-02-06 17:32:30 -0500
-categories: virtualbox networking
+title: "Using an Arch VirtualBox as a Local Dev Server"
+date: 2016-02-06
+category: dev
 ---
+
 My main machine at home is a Windows 7 box. It's great for gaming and other media consumption, but I can't stand the ecosystem for dev work. I'm more comfortable with the Unix side of things. So I've usually resorted to dual booting or using the Macbook. I go in spurts though, and if I go a few weeks without touching the Linux side of things I feel like I've let the OS down. Like an unmowed lawn. If I switch to a VirtualBox, I thought, maybe I'll hop back and forth between the two operating systems enough to maintain each of them properly.
 
 I installed Arch using some default VBox settings and it worked great. I configured it to my liking: [unixporn][] style with bspwm and urxvt and nothing else. I figured I wouldn't have to worry about memory issues if I never installed a browser or anything like that. That was the whole idea behind the virtual machine.

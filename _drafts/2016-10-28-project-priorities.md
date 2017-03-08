@@ -1,9 +1,7 @@
 ---
-layout: post
-title:  "Project Priorities"
-date:   2016-01-07 07:40:30 -0500
-author: zachfedor
-categories: dev
+title: "Project Priorities"
+date: 2016-01-07
+category: dev
 ---
 
 I have a lot of side projects floating around my head right now. They are in various stages of started, anywhere from a few minutes of pipe dreaming to the beginnings of a code base that has been restarted four times already. Notably, none of these have gone farther than their start. Hopefully this exercise will fix that.

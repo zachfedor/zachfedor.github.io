@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Motherboard Problems"
-date:   2016-03-21 10:26:00 -0500
-categories: dev
+title: "Motherboard Problems"
+date: 2016-03-21
+category: dev
 ---
+
 The other day, I turned on my PC and was greeted by a warning saying my copy of Windows 7 was not genuine. I was a little miffed. TODO: add root cause here
 
 Context: I built this machine myself. I honestly don't remember if this copy of the OS was genuine or not. I was fairly positive that it was, but there is a chance it wasn't. Either way, I've been using this machine without problem for at least a year. Something had to be wrong for it to wake up broken.

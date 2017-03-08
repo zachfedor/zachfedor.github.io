@@ -1,10 +1,8 @@
 ---
-layout: post
-title:  "Terminal Color with Vim and Iterm2"
-date:   2016-01-31 21:52:00 -0500
-categories: dev
+title: "Terminal Color with Vim and Iterm2"
+date: 2016-01-31
+category: dev
 ---
-# Terminal Color with Vim and Iterm2
 
 _Or, How to Make Plain Text Sexy Again_
 

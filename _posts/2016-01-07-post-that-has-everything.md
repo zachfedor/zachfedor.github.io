@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "A Post That Has Everything"
-date:   2016-01-07 07:40:30 -0500
-author: zachfedor
-categories: musings
+title: "A Post That Has Everything"
+date: 2016-01-07
 ---
 
 *This post only exists to demonstrate the living documentation that Astrum provides as a pattern library. [Check it out.](/library)*
