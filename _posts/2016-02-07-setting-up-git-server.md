@@ -1,7 +1,7 @@
 ---
 title: "Setting Up a Personal Git Server on a VPS"
 date: 2016-02-07
-category: dev
+category: developer
 ---
 
 I've been sitting on an under-used VPS for too long. Time to backup all my git repos that I don't feel like hosting on GitHub!

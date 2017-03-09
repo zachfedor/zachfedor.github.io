@@ -1,7 +1,7 @@
 ---
 title: "TechLancaster: Atomic Design"
 date: 2016-07-19
-category: dev
+category: developer
 tags: presentation
 ---
 

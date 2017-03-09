@@ -1,7 +1,7 @@
 ---
 title: "Using an Arch VirtualBox as a Local Dev Server"
 date: 2016-02-06
-category: dev
+category: developer
 ---
 
 My main machine at home is a Windows 7 box. It's great for gaming and other media consumption, but I can't stand the ecosystem for dev work. I'm more comfortable with the Unix side of things. So I've usually resorted to dual booting or using the Macbook. I go in spurts though, and if I go a few weeks without touching the Linux side of things I feel like I've let the OS down. Like an unmowed lawn. If I switch to a VirtualBox, I thought, maybe I'll hop back and forth between the two operating systems enough to maintain each of them properly.

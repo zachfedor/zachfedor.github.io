@@ -1,7 +1,7 @@
 ---
 title: "Terminal Color with Vim and Iterm2"
 date: 2016-01-31
-category: dev
+category: developer
 ---
 
 _Or, How to Make Plain Text Sexy Again_
