@@ -2,6 +2,7 @@
 title: "Terminal Color with Vim and Iterm2"
 date: 2016-01-31
 category: developer
+excerpt: "How to make plain text sexy again"
 ---
 
 _Or, How to Make Plain Text Sexy Again_

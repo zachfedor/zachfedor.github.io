@@ -1,6 +1,8 @@
 ---
 title: "A Post That Has Everything"
 date: 2016-01-07
+category: developer
+excerpt: "A page with dummy content to demo the use of a pattern library"
 ---
 
 *This post only exists to demonstrate the living documentation that Astrum provides as a pattern library. [Check it out.](/library)*

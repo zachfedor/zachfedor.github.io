@@ -3,6 +3,7 @@ title: "TechLancaster: Atomic Design"
 date: 2016-07-19
 category: developer
 tags: presentation
+excerpt: "A presentation on the usefulness of design systems"
 ---
 
 Hey TechLancaster! Thanks for letting get nerdy about design systems!

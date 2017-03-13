@@ -1,16 +1,17 @@
 ---
 title: "The Most Human of Timescales"
 date: 2016-03-08
-category: musings
+category: philosopher
+excerpt: "Thoughts on measuring time inspired by The Stranger by Camus"
 ---
 
 What is the most human of timescales? We measure our age in years, but is this the best choice to define our life?
 
-> I hadn't understood how days could be both long and short at the same time: long to live through, maybe, but so drawn out that theyflow into one another. They lost their names. Only the words "yesterday" and "tomorrow" still had any meaning for me.
+> I hadn't understood how days could be both long and short at the same time: long to live through, maybe, but so drawn out that they flow into one another. They lost their names. Only the words "yesterday" and "tomorrow" still had any meaning for me.
 >
 > <span>-- <cite>Albert Camus</cite></span>
 
-This is the life of a prisoner, the epynomous Stranger. At the risk of sounding existential, this could also be the life of any of us. I don't believe life is a prison, but I believe we have the potential to make it so.
+This is the life of a prisoner, the eponymous Stranger. At the risk of sounding existential, this could also be the life of any of us. I don't believe life is a prison, but I believe we have the potential to make it so.
 
 The problem with prison, or rather the point of it, is to remove the prisoner's freedom. In other words, it is to remove the prisoner's ability to to spend his time. I say "spend" partially because of the common idiom comparing time and money, but mostly because I lack a better metaphor.
 

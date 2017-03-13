@@ -2,39 +2,35 @@
  * Site header
  */
 .site-header {
-    border-top: 0.5rem solid $text-dark;
-    min-height: 56px;
-}
-
-.site-title {
-    font-weight: 300;
-    line-height: 56px;
-    margin-bottom: 0;
-    float: left;
+  padding-top: 20px;
+  border-top: 0.5rem solid $text-dark;
 }
 
 .site-nav {
-    float: right;
-    line-height: 56px;
+  text-align: right;
 
-    .menu-icon {
-        display: none;
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-dark;
+    text-transform: lowercase;
+
+    &.site-title {
+      float: left;
+      margin: 0;
     }
 
-    .page-link {
-        color: $text-dark;
-        line-height: $base-line-height;
-        text-transform: lowercase;
-
-        &:hover {
-            color: $accent;
-        }
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
+    &:hover {
+      color: $accent;
     }
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }
 
 
@@ -43,54 +39,55 @@
  * Site footer
  */
 .site-footer {
-    background: $base-dark;
-    padding: $spacing-unit 0;
-    text-align: center;
+  background: $base-dark;
+  padding: $spacing-unit 0;
+  text-align: center;
 }
 
 .footer-col-wrapper {
-    color: $text-dark;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+  color: $text-dark;
+  margin-left: -$spacing-unit / 2;
+
+  @include clearfix();
 }
 
 .footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-    width: -webkit-calc(33% - (#{$spacing-unit} / 2));
-    width:         calc(33% - (#{$spacing-unit} / 2));
-    text-align: center;
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+  width: -webkit-calc(33% - (#{$spacing-unit} / 2));
+  width:         calc(33% - (#{$spacing-unit} / 2));
+  text-align: center;
 
-    a {
-        border: none;
-        font-size: $base-font-size * 2;
-    }
+  a {
+    border: none;
+    font-size: $base-font-size * 2;
+  }
 }
 
 @include media-query($on-laptop) {
-    .footer-col a {
-    }
+  .footer-col a {
+  }
 }
 
 @include media-query($on-palm) {
-    .footer-col a {
+  .footer-col a {
 
-    }
+  }
 }
 
 .footer-description {
-    color: $text-dark;
-    margin: 2rem;
+  color: $text-dark;
+  margin: 2rem;
 
-    cite:before {
-        content: "- ";
-    }
+  cite:before {
+    content: "- ";
+  }
 }
 
 .footer-heading {
-    font-size: $base-font-size * 2;
-    margin-bottom: $spacing-unit / 2;
+  font-size: $base-font-size * 2;
+  margin-bottom: $spacing-unit / 2;
 }
 
 
@@ -98,26 +95,63 @@
  * Index
  */
 article.post-tile {
-    padding: $spacing-unit / 2;
-    transition: background-color ease $time;
+  padding: $spacing-unit / 2;
+  transition: background-color ease $time;
+
+  a.post-link {
+    border: none;
+    text-decoration: none;
+  }
+
+  h2 {
+    padding: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid;
+    transition: color ease $time, border-color ease $time;
+  }
+
+  div.post-meta {
+    margin: 0 0 ($spacing-unit / 2);
+    color: $text-dark;
+
+    @include clearfix();
+
+    span.post-category {
+      float: left;
+    }
+
+    span.post-date {
+      float: right;
+    }
+  }
+
+  div.post-excerpt {
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    color: $text-dark;
+    font-size: $small-font-size;
+    transition: max-height ease $time, opacity ease $time;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &:hover {
+    background: $base-dark;
 
     h2 {
-        padding: 0;
-        margin-bottom: 0.4rem;
-
-        a.post-link {
-            text-underline: none;
-        }
+      color: $text;
+      border-color: $text;
     }
 
-    p.post-meta {
-        margin: 0;
-        text-align: right;
+    div.post-excerpt {
+      max-height: 75px;
+      opacity: 1;
     }
-
-    // &:hover {
-    //     background-color: $base-dark;
-    // }
+  }
 }
 
 
@@ -125,55 +159,55 @@ article.post-tile {
  * Page content
  */
 .page-content {
-    padding: ($spacing-unit + 1rem) 0;
+  padding: ($spacing-unit + 1rem) 0;
 }
 
 .page-heading {
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
+  margin-left: 0;
+  list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $text-dark;
-    text-transform: lowercase;
+  font-size: $small-font-size;
+  color: $text-dark;
+  text-transform: lowercase;
 
-    time {
-        display: block;
-        position: relative;
-        width: 100%;
-        text-align: center;
-        z-index: 1;
+  time {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
 
-        &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            border-top: 1px solid $text-dark;
-            z-index: -1;
-        }
-
-        span {
-            background: $base;
-            padding: 2px 15px;
-        }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid $text-dark;
+      z-index: -1;
     }
+
+    span {
+      background: $base;
+      padding: 2px 15px;
+    }
+  }
 }
 
 .post-link {
-    display: block;
-    font-size: 1.3333rem;
+  display: block;
+  font-size: 1.3333rem;
 }
 
 
@@ -182,45 +216,45 @@ article.post-tile {
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 
-    @include media-query($on-laptop) {
-        // font-size: 36px;
-    }
+  @include media-query($on-laptop) {
+    // font-size: 36px;
+  }
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 
-    // h2 {
+  // h2 {
     //     font-size: 32px;
 
     //     @include media-query($on-laptop) {
-    //         font-size: 28px;
+      //         font-size: 28px;
     //     }
-    // }
+  // }
 
-    // h3 {
+  // h3 {
     //     font-size: 26px;
 
     //     @include media-query($on-laptop) {
-    //         font-size: 22px;
+      //         font-size: 22px;
     //     }
-    // }
+  // }
 
-    // h4 {
+  // h4 {
     //     font-size: 20px;
 
     //     @include media-query($on-laptop) {
-    //         font-size: 18px;
+      //         font-size: 18px;
     //     }
-    // }
+  // }
 
-    p {
-        text-align: justify;
-    }
+  p {
+    text-align: justify;
+  }
 }

@@ -2,6 +2,7 @@
 title: "Absolute Paths for React Components"
 date: 2017-03-09
 category: developer
+excerpt: "Because I got real tired at maintaining relative imports across my app"
 ---
 
 Today, I was working on a new React project at work and got really annoyed at writing `import Component from '../../some/other/directory';`. I got even more annoyed when my guessed path was wrong. And then I had to move some components around and do it all over again.

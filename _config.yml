@@ -27,4 +27,6 @@ defaults:
     values:
       author: "zachfedor"
       layout: "post"
+      category: "developer"
+      excerpt: "-"
 

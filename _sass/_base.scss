@@ -227,7 +227,8 @@ hr {
  * Code formatting
  */
 pre, code {
-    font-size: $small-font-size;
+    // font-size: $small-font-size;
+    font-size: 0.8rem;
 }
 
 code {
@@ -243,6 +244,7 @@ pre {
     code {
         padding: 0px;
         background-color: none;
+        opacity: 0.8;
     }
 }
 
@@ -311,27 +313,14 @@ div.table-responsive {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    @extend %clearfix;
+
+    @include clearfix();
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }
 

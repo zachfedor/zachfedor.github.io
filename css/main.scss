@@ -46,6 +46,16 @@ $time: 0.3s;
 }
 
 
+// Clearfix
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
