@@ -25,6 +25,20 @@ Breathe easy knowing your app is a little more future-proofed.
 
 ---
 
+_Update: 2017-03-21_
+
+A little while later, I tacked on some extra linting for code style to help the team out. It's a little annoying without access to `create-react-app`'s config files, but it worked. However, Airbnb's eslint config doesn't like my absolute imports. I thought the rules were important and didn't want to ignore them, but I couldn't figure out how to fix it without breaking into webpack's config. So we have these everywhere now...
+
+{% highlight javascript %}
+import React from 'react';
+/* eslint-disable import/no-unresolved, import/no-estraneous-dependencies */
+import MyComponent from 'path/to/MyComponent';
+import 'OtherComponent.css';
+/* eslint-enable import/no-unresolved, import/no-estraneous-dependencies */
+{% endhighlight %}
+
+---
+
 **Sources:**
 
 - [create-react-app PR #1712][cra-pr]
