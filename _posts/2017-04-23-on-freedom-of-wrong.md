@@ -11,7 +11,7 @@ This afternoon, I was talking about my lifelong attempt to stop being a know-it-
 
 Today, I was talking about how challenging this still is for me even a decade later. This may be harder now because of the changing landscape of how we inform ourselves. It's so easy to have complex opinions on a broad range of topics, anything from pumpernickel bread recipes to the Syrian conflict, just because the wealth of information at our fingertips.
 
-Well, the internet served me up a timely article called [The Art of Letting Others Be right](http://www.raptitude.com/2016/02/the-art-of-letting-others-be-right/). It got me wondering. Maybe stemming the spray of trivia and sprinkling on a bit of tact has been difficult because it is not going far enough. Even after taking some steps to avoid it, I can still get pulled into an argument for the sake of knowledge far too easily.
+Well, the internet served me up a timely article called [The Art of Letting Others Be Right](http://www.raptitude.com/2016/02/the-art-of-letting-others-be-right/). It got me wondering. Maybe stemming the spray of trivia and sprinkling on a bit of tact has been difficult because it is not going far enough. Even after taking some steps to avoid it, I can still get pulled into an argument for the sake of knowledge far too easily.
 
 > It's not just _okay_ to engage in these little conflicts, it's a moral imperative. We can't just _allow_ ignorance to go on unopposed.
 
