@@ -12,7 +12,7 @@ _Or, How to Make Plain Text Sexy Again_
 
 There wasn't much of a problem, but because I'm a hopeless yak-shaver I had to style everything to perfection before I get started on that actual project I've been dreaming up. The scene opens on a fairly rough vim config, a borderless iterm2 patch that I can't remember how to replicate, and a longing for greener pastures.
 
-The first step is towards the excellent [base16 themes][base16-github]. I cloned a few of the repos and added a star for good measure. There are iterm2 and vim themes which are both required for my circumstances. Thre is also the base16 builder and a base16 shell repo, neither of which I understand yet. So I avoid them.
+The first step is towards the excellent [base16 themes][base16-github]. I cloned a few of the repos and added a star for good measure. There are iterm2 and vim themes which are both required for my circumstances. There is also the base16 builder and a base16 shell repo, neither of which I understand yet. So I avoid them.
 
 
 ## Attempt #1
