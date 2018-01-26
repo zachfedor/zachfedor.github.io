@@ -72,19 +72,53 @@
     var ready = false;
     var travels = {
       "both": [
-        'WA', 'OR', 'IN', 'OH', 'PA', 'WV', 'VA', 'NC', 'NY', 'MA',
-        'CT', 'NJ', 'MD', 'FL', 'DE'
+        'AZ',
+        'CA',
+        'CT',
+        'DE',
+        'FL',
+        'IN',
+        'KY',
+        'MA',
+        'MD',
+        'MO',
+        'NC',
+        'NJ',
+        'NM',
+        'NY',
+        'OH',
+        'OR',
+        'PA',
+        'TX',
+        'VA',
+        'WA',
+        'WV',
       ],
       "emily": [
-        'CA', 'AZ', 'KS', 'IL', 'MI', 'KY', 'TN', 'LA', 'VT', 'NH',
-        'RI', 'ME', 'TX'
+        'IL',
+        'KS',
+        'LA',
+        'ME',
+        'MI',
+        'NH',
+        'RI',
+        'TN',
+        'VT',
       ],
       "zach": [
-        'CA', 'NV', 'AZ', 'UT', 'CO', 'SD', 'MT', 'TX', 'LA', 'AL'
+        'AL',
+        'CO',
+        'LA',
+        'MT',
+        'NH',
+        'NV',
+        'SD',
+        'UT',
       ]
     };
 
     function stateIndex(state) {
+      // NOTE: DO NOT CHANGE THIS ORDER
       map = [
         "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL",
         "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
@@ -118,7 +152,7 @@
       // if async json loading fails, throw exception
       if(err) throw err;
 
-      // setup bisector function to add values to left of matched index in an array 
+      // setup bisector function to add values to left of matched index in an array
       var bisectId = d3.bisector(function(d) { return d.id; }).left;
 
       // create features from coordinates of the states data
