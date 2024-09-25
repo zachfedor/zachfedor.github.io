@@ -4,24 +4,25 @@ title: About
 permalink: /about/
 ---
 
-Hi. My name is Zach Fedor and I'm a professional developer, an amateur philosopher, and an avid story teller. So I write about them, even if no one is listening...
+Hi. My name is Zach Fedor and I'm a professional developer, a self-styled philosopher, and an avid story teller. I occasionally write about these things, even if no one is listening...
 
 
 ## Other Stuff for the Curious
 
-- I'm currently based out of [Lancaster, PA][lanc], a cool little city with a thriving [tech community][tl].
-- I'm a developer at [Industrial Resolution][ir] where I make all sorts of web things. I like it. Here's [my resume][] if you're curious.
-- I made [exemplify.io][exemplify] to help fellow dev agencies define acceptance for their user stories. And it's [open-source][gh-exemplify]!
-- Here are some of the [tech presentations][slides] I've given at local meetups.
-- Check out my [reading list][goodreads]. I'm always looking for recommendations!
+- I'm based out of [Lancaster, PA][lanc], a cool little city with a thriving [tech community][tl].
+- Recently, I was front-end engineer at [thehug.xyz][work] but I'm currently looking for work. Here's [my resume][]!
+- You can look through some of my projects on [Github][] and [CodePen][].
+- Here are some of the [presentations][slides] I've given at local tech meetups. Some are on [YouTube][yt].
+- Check out my [reading list][goodreads]. I'm always looking for recommendations.
   
-  
+
 [lanc]: https://en.wikipedia.org/wiki/Lancaster,_Pennsylvania
-[tl]: http://techlancaster.com
-[ir]: http://theindustrialresolution.com
-[my resume]: {{ site.base_url }}/ZachFedor-Resume.pdf
-[exemplify]: http://exemplify.io
-[gh-exemplify]: https://github.com/zachfedor/exemplify
-[slides]: http://slides.com/zachfedor
+[tl]: https://techlancaster.com
+[work]: https://thehug.xyz
+[my resume]: {{ site.base_url }}/zachfedor-resume.pdf
+[Github]: https://github.com/zachfedor
+[CodePen]: https://codepen.io/zachfedor
+[slides]: https://slides.com/zachfedor
+[yt]: https://www.youtube.com/@techlancaster5983/videos
 [goodreads]: https://www.goodreads.com/user/show/17803915-0dyss3us
   
