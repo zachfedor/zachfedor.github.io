@@ -1,326 +1,335 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: $root-font-size;
+  font-size: $root-font-size;
 
-    @include media-query($on-palm) {
-        font-size: $root-font-size * 0.85;
-    }
+  @include media-query($on-palm) {
+    font-size: $root-font-size * 0.85;
+  }
 
-    // @include media-query($large) {
-    //     font-size: $root-font-size * 1.2;
-    // }
+  // @include media-query($large) {
+  //     font-size: $root-font-size * 1.2;
+  // }
 }
 
 /**
  * Stop transitions on initial load
  */
 body.preload * {
-    -webkit-transition: none !important;
-       -moz-transition: none !important;
-        -ms-transition: none !important;
-         -o-transition: none !important;
-            transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
-
 
 /**
  * Basic styling
  */
 body {
-    min-width: 400px;
-    background-color: $base;
-    color: $text;
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
+  min-width: 400px;
+  background-color: $base;
+  color: $text;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+    $base-font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
-
-
 
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-    padding-top: $spacing-unit / 2;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $base-font-weight;
+  padding-top: calc($spacing-unit / 2);
 }
 h1 {
-    font-size: 3rem;
-    line-height: 1.1;
-    letter-spacing: 2px;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: 2px;
 }
-h2, h3, h4, h5, h6 {
-    color: $text-dark;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-dark;
 }
 h2 {
-    font-size: 2.29rem;
+  font-size: 2.29rem;
 }
 h3 {
-    font-size: 1.71rem;
+  font-size: 1.71rem;
 }
 h4 {
-    font-size: 1.3333rem;
+  font-size: 1.3333rem;
 }
 h5 {
-    font-size: 1.14rem;
+  font-size: 1.14rem;
 }
 h6 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-
-
 
 /**
  * Body Text
  */
 strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 i {
-    font-style: italic;
+  font-style: italic;
 }
 sup {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
-
 
 /**
  * Links
  */
 a {
-    padding-bottom: 2px;
+  padding-bottom: 2px;
+  color: $text-dark;
+  border-bottom: 1px solid $text-dark;
+  text-decoration: none;
+  transition: color ease $time, border-color ease $time;
+
+  &:visited {
     color: $text-dark;
-    border-bottom: 1px solid $text-dark;
-    text-decoration: none;
-    transition: color ease $time, border-color ease $time;
+  }
 
-    &:visited {
-        color: $text-dark;
-    }
+  &:hover {
+    color: $accent;
+    border-color: $accent;
+  }
 
-    &:hover {
-        color: $accent;
-        border-color: $accent;
-    }
-
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
-
-
 
 /**
  * Images
  */
 img {
-    max-width: 100%;
-    vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
 }
-
-
 
 /**
  * Figures
  */
 figure > img {
-    display: block;
+  display: block;
 }
 
 figcaption {
-    font-size: $small-font-size;
+  font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
+ul,
+ol {
+  margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }
-
-
 
 /**
  * Blockquotes
  */
 blockquote {
-    position: relative;
-    color: $text-dark;
-    padding: $spacing-unit;
-    font-size: $small-font-size;
-    font-style: italic;
+  position: relative;
+  color: $text-dark;
+  padding: $spacing-unit;
+  font-size: $small-font-size;
+  font-style: italic;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
+  }
 
-    span {
-        position: absolute;
-        right: 100px;
-        text-align: right;
-    }
+  span {
+    position: absolute;
+    right: 100px;
+    text-align: right;
+  }
 
-    &:before, &:after {
-        position: absolute;
-        font-size: 3rem;
-        line-height: 10px;
-    }
-    &:before {
-        content: "“";
-    }
-    &:after {
-        content: "”";
-        bottom: 10px;
-        right: $spacing-unit + 0.5rem;
-    }
+  &:before,
+  &:after {
+    position: absolute;
+    font-size: 3rem;
+    line-height: 10px;
+  }
+  &:before {
+    content: "“";
+  }
+  &:after {
+    content: "”";
+    bottom: 10px;
+    right: $spacing-unit + 0.5rem;
+  }
 }
-
-
 
 /**
  * Horizontal Rules
  */
 hr {
-    border: 0;
-    height: 1px;
-    background: $text-dark;
-    margin: ($spacing-unit * 1.5) 0;
+  border: 0;
+  height: 1px;
+  background: $text-dark;
+  margin: ($spacing-unit * 1.5) 0;
 }
-
-
 
 /**
  * Code formatting
  */
-pre, code {
-    // font-size: $small-font-size;
-    font-size: 0.8rem;
+pre,
+code {
+  // font-size: $small-font-size;
+  font-size: 0.8rem;
 }
 
 code {
-    padding: 3px 5px;
-    background-color: $base-dark;
+  padding: 3px 5px;
+  background-color: $base-dark;
 }
 
 pre {
-    padding: $spacing-unit;
-    background-color: $base-dark;
-    overflow-x: auto;
+  padding: $spacing-unit;
+  background-color: $base-dark;
+  overflow-x: auto;
 
-    code {
-        padding: 0px;
-        background-color: none;
-        opacity: 0.8;
-    }
+  code {
+    padding: 0px;
+    background-color: none;
+    opacity: 0.8;
+  }
 }
-
-
 
 /**
  * Tables
  */
 table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 2rem;
-    border: none;
-    border-collapse: collapse;
-    text-align: left;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  border-collapse: collapse;
+  text-align: left;
 
-    td {
-        border-top: 1px solid $text-dark;
-    }
+  td {
+    border-top: 1px solid $text-dark;
+  }
 
-    th {
-        border-bottom: 3px solid $text-dark;
-    }
+  th {
+    border-bottom: 3px solid $text-dark;
+  }
 
-    td, th {
-        vertical-align: bottom;
-        padding: ($spacing-unit / 4) ($spacing-unit / 2);
-    }
+  td,
+  th {
+    vertical-align: bottom;
+    padding: calc($spacing-unit / 4) calc($spacing-unit / 2);
+  }
 }
 
 div.table-responsive {
-    display: block;
-    width: 100%;
-    min-height: 0.01%;
-    overflow-x: auto;
+  display: block;
+  width: 100%;
+  min-height: 0.01%;
+  overflow-x: auto;
 }
-
-
 
 /**
  * Icons
  */
 .icon {
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $text-dark;
-        }
+    path {
+      fill: $text-dark;
     }
+  }
 }
-
-
 
 /**
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
 
-    @include clearfix();
+  @include clearfix();
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: calc($spacing-unit / 2);
+    padding-left: calc($spacing-unit / 2);
+  }
 }
-
